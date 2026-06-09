@@ -1,0 +1,34 @@
+{
+  "name": "opportunityradar",
+  "version": "1.0.0",
+  "description": "AI-powered opportunity discovery platform for Agents League Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install && echo 'Setup complete!'",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "echo 'Tests coming soon'",
+    "docker:up": "docker-compose up",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": [
+    "opportunities",
+    "careers",
+    "hackathons",
+    "scholarships",
+    "internships",
+    "jobs",
+    "ai",
+    "matching",
+    "github-copilot",
+    "microsoft-work-iq"
+  ],
+  "author": "Chakri6325",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chakri6325/opportunityradar.git"
+  }
+}
