@@ -1,6 +1,9 @@
 # 🎯 OpportunityRadar
 
 **Never miss an opportunity again.**
+
+**[📺 Watch the Demo Video Here!](https://drive.google.com/file/d/1f8rlgvd_ZydxAjpIikmZfrX3z2fjbO6H/view?usp=drivesdk)**
+
 OpportunityRadar is a hyper-personalized, AI-powered career discovery platform built for the **Agents League Hackathon: Creative Apps Track**. It autonomously scours the internet for hackathons, scholarships, internships, and jobs, and then uses AI to match you with the opportunities you are most likely to win based on your unique skills and interests.
 
 ---
