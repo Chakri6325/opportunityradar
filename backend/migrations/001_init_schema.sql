@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS applications (
 CREATE TABLE IF NOT EXISTS career_profiles (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id UUID NOT NULL UNIQUE REFERENCES users(id) ON DELETE CASCADE,
-  current_role VARCHAR(255),
+  current_position VARCHAR(255),
   target_role VARCHAR(255),
   target_industry VARCHAR(255),
   experience_years INT,

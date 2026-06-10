@@ -3,7 +3,8 @@ import axios from 'axios';
 import jwt from 'jsonwebtoken';
 import { pool } from '../config/database';
 import { v4 as uuidv4 } from 'uuid';
-import { AuthRequest } from '../middleware/auth';
+import { AuthRequest, authMiddleware } from '../middleware/auth';
+
 
 const router = Router();
 
@@ -90,7 +91,8 @@ router.get('/github/callback', async (req, res) => {
 });
 
 // Get current user profile
-router.get('/profile', async (req: AuthRequest, res: Response) => {
+router.get('/profile', authMiddleware, async (req: AuthRequest, res: Response) => {
+
   try {
     const userId = req.userId;
     const client = await pool.connect();

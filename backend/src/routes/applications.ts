@@ -13,7 +13,7 @@ router.get('/', async (req: AuthRequest, res: Response) => {
 
     try {
       const result = await client.query(
-        `SELECT a.*, o.title, o.company_name, o.type 
+        `SELECT a.*, o.title, o.company_name, o.type, o.source_url 
          FROM applications a
          JOIN opportunities o ON a.opportunity_id = o.id
          WHERE a.user_id = $1
